@@ -14,7 +14,54 @@
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
     <style>
+	
+	 div.caption-text {
+      border-right: 2px ridge green ;
+	  margin: 20px 60px auto;
+    }
 
+		.sty {
+			background-size: cover;
+			cursor: pointer;
+			box-shadow: 0 10px 25px rgba(0,0,0,.7);
+			&:hover {
+			box-shadow: 0 20px 20px rgba(0,0,0,.5);
+			}
+			vertical-align: top;
+			width: 300px;
+			height: 200px;
+			margin: auto;
+			overflow: hidden;
+			
+			 @media screen and (min-width: 520px) and (max-width: 779px) {
+    vertical-align: top;
+			margin: 50px 50px;
+			width: 300px;
+    height: 160px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.7);
+    outline: 7px solid #2a2a2a;
+  }
+  
+			@media screen and (max-width: 519px) {
+     vertical-align: top;
+     margin: 30px;
+     width: calc(100% - 60px);
+     height: 180px;
+     box-shadow: 0 10px 25px rgba(0,0,0,.7);
+     outline: 7px solid #2a2a2a;
+   } 
+   
+}
+	
+	.sty:hover {
+		-moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+	}
+  
         body{
             margin: 0px; 
 			padding: 0px;
@@ -58,7 +105,7 @@
     <div class="container">
         <div class="jumbotron">
             <div class="row text-center">
-                <div class="col-md-12" style="padding: 1px">
+                <div class="col-sm-12 col-sm-12" style="padding: 1px">
                     <h1 style="font-family: Century Gothic, sans-serif;">Sachin Tendulkar</h1>
                     <h2 style="font-family: Open sans;margin-top:3px"><em>The GOD of Cricket</em></h2>
             </div>
@@ -68,8 +115,8 @@
             <div class="thumbnail img-responsive">
                 <img src="Sachin-Tendulkar.jpg" alt="Picture of Dennis Ritchie" title="Dennis MacAlistair Ritchie"/>
                 <div class="caption text-center">
-                    <span class="caption-text"><em>"I hate losing and cricket being my first love, once I enter the ground it's a different zone altogether and that hunger for winning is always there."</em></span>
-                </div>
+                    <div class="caption-text"><em>"I hate losing and cricket being my first love, once I enter the ground it's a different zone altogether and that hunger for winning is always there."</em></div>
+				</div>
             </div>
             </div>
                 
@@ -157,25 +204,24 @@
 			
 			<br/>
 			
-			<div class = "row text-center">
    
-   <div class = "col-sm-6 col-md-4 ">
-      <div class = "thumbnail">
+   <div class = "col-sm-6 col-md-6 col-lg-4">
+      <div class = "thumbnail sty">
          <img src = "s1.jpg" alt = "Generic placeholder thumbnail" style="height:220px; width: 320px">
       </div>
      	  <br/>
    </div>
    
-   <div class = "col-sm-6 col-md-4">
-      <div class = "thumbnail">
+   <div class = "col-sm-6 col-md-6 col-lg-4">
+      <div class = "thumbnail sty">
          <img src = "s2.jpg" alt = "Generic placeholder thumbnail" style="height:220px; width: 320px">
       </div>
       	  <br/>
    </div>
 
 <!--end of row1  <div class = "col-sm-6 col-md-3"> -->
-   <div class = "col-sm-6 col-md-4">
-      <div class = "thumbnail">
+   <div class = "col-sm-6 col-md-6 col-lg-4">
+      <div class = "thumbnail sty">
          <img src = "s3.jpg" alt = "Generic placeholder thumbnail" style="height:220px; width: 320px">
       </div>
      	  <br/>
@@ -184,44 +230,43 @@
    <!--end of row1  <div class = "col-sm-6 col-md-3"> -->
 
    
-</div> 
-			<div class = "row text-center">
 
-   <div class = "col-sm-6 col-md-4">
-      <div class = "thumbnail">
+   <div class = "col-sm-6 col-md-6 col-lg-4">
+      <div class = "thumbnail sty">
          <img src = "s4.jpg" alt = "Generic placeholder thumbnail" style="height:220px; width: 320px">
       </div>
 	  <br/>
    </div>
 
-<div class = "col-sm-6 col-md-4">
-      <div class = "thumbnail">
+<div class = "col-sm-6 col-md-6 col-lg-4">
+      <div class = "thumbnail sty">
          <img src = "s5.jpg" alt = "Generic placeholder thumbnail" style="height:220px; width: 320px">
       </div>
 	  <br/>
    </div>
 
-<div class = "col-sm-6 col-md-4">
-      <div class = "thumbnail">
+<div class = "col-sm-6 col-md-6 col-lg-4">
+      <div class = "thumbnail sty">
          <img src = "s6.jpg" alt = "Generic placeholder thumbnail" style="height:220px; width: 320px">
       </div>
    </div>
-
-</div> 
+<div></div>
             
-                <div class="row" style="margin-top:50px">
-					<div class="col-md-12" style="text-align: center">
+                <div class="row">
+					<div class="col-md-12 col-sm-12" style="text-align: center; margin: 80px 0px 0px 0px">
 						<footer> 
 								<i class="text-danger fa fa-align-left" aria-hidden="true"> &nbsp; &nbsp; &nbsp; </i>
 									<span class="footer"> Designed by 
-										<a href="http://mepsrajput.github.io/" style="text-decoration: none">Pradeep Singh</a> </span> &nbsp; &nbsp; &nbsp;  
+										<a href="http://mepsrajput.github.io/" style="text-decoration: none">Pradeep Singh</a>&nbsp; <span>&nbsp;||&nbsp;</span>						
+										<i class="fa fa-copyright " aria-hidden="true" style="font-weight: bold"></i>&nbsp;<span>2017</span>	
+										</span> &nbsp; &nbsp; &nbsp;  
 								<i class="fa fa-align-right text-danger" aria-hidden="true"></i>
 						</footer>
                     </div>
 				</div>
      
-				<div class="row" style="margin-top:20px">
-					<div class="col-md-12" style="text-align: center">
+				<div class="row" style="margin-top: 25px">
+					<div class="col-md-12 col-sm-12" style="text-align: center">
 									<a href="https://www.facebook.com/psrajputofficial/"> <i class="fa fa-facebook-square fa-2x " aria-hidden="true" style="color:#000"></i></a>&nbsp;&nbsp;               
 									<a href="https://twitter.com/mepsrajput"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color:#000"></i></a>&nbsp;&nbsp;
 									<a href="https://www.linkedin.com/in/mepsrajput/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#000"></i></a>&nbsp;&nbsp;
@@ -232,7 +277,6 @@
 
 				<div class="row" style="margin-top:10px; font-weight: bold">
 					<div class="col-md-12 text-center" style="font-size: 15px">
-						<i class="fa fa-copyright " aria-hidden="true" style="font-weight: bold"></i>&nbsp;<span>2017</span>	
 					</div>
                 </div>
         </div>
